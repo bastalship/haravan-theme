@@ -1,0 +1,128 @@
+.newsletter {
+    margin-bottom: 70px;
+}
+.home-title {
+	position: relative;
+    margin-bottom: 25px;
+	h2 {
+	    text-transform: uppercase;
+	    font-size: 28px;
+	    display: table;
+	    background: #fff;
+	    position: relative;
+	    z-index: 9;
+	    padding-right: 10px;
+	}
+	&:after {
+	    content: '';
+	    height: 3px;
+	    position: absolute;
+	    width: 100%;
+	    background: #60a703;
+	    bottom: 10px;
+	}	
+}
+#blog {
+	background-color: @box-footer-bg;
+	.home-title {
+	    position: relative;
+	    margin-bottom: 25px;
+		h2 {
+			text-transform: uppercase;
+		    font-size: 28px;
+		    display: table;
+		    position: relative;
+		    z-index: 9;
+		    padding-right: 10px;
+		    font-weight: 300;
+		}
+		
+	}	
+}
+.news-item {
+    border: 1px solid #ccc;
+}
+.img-news img {
+    width: 100%;
+}
+.content-news {
+    border-top: 0;
+    padding: 30px 15px;
+}
+h3 {
+	&.title-news {
+		a {
+		    color: #444;
+		    font-weight: 300;
+		    &:hover {
+				color: @primary-color;
+				.transition(all 0.2s ease-in-out);
+			}
+		}
+	}
+	&.title-panel {
+	    margin-top: 0;
+	    font-size: 28px;
+	    color: #202020;
+	    margin-bottom: 15px;
+	    font-weight: 300;
+    	a {
+			color: #444;
+			&:hover {
+				color: @primary-color;
+				.transition(all 0.2s ease-in-out);
+			}
+    	}
+	}
+}
+.detail-news {
+    font-size: 15px;
+    color: #555;
+}
+.new-panel,
+.post-panel {
+    margin-bottom: 40px;
+}
+.content-panel {
+	p {
+		color: #555;
+	}
+}
+.post-panel {
+	h3  {
+		&.title-panel {
+			margin-top: 0;
+	    	font-size: 20px;
+		}
+	}
+}
+ul {
+	list-style-type: none;
+	padding-left: 0;
+	&.list-video {
+		margin: 20px 0;
+		 li {
+	 	    margin-bottom: 15px;
+		    display: table;
+		    width: 100%;
+		 }
+	}
+}
+.img-video {
+    width: 95px;
+    margin-right: 10px;
+}
+ul {
+	&.list-tag {
+		li {
+			float: left;
+		    padding: 10px 23px;
+		    border: 1px solid #ccc;
+		    margin-right: 15px;
+		    margin-bottom: 15px;
+		    a {
+		    	color: #555;
+		    }
+		}
+	}
+}

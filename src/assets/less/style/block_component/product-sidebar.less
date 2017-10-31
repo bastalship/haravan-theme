@@ -1,0 +1,250 @@
+.menu-left-title {
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    background: #444;
+    padding: 20px 0;
+    color: #fff;
+    border-left: 5px solid #60a703;
+}
+.nav {
+	> li {
+		position: relative;
+	    display: block;
+		> a {
+			position: relative;
+		    display: block;
+		    padding: 10px 15px;
+		}
+	}
+}
+ul {
+	&#cssmenu {
+		background: #fff;
+    	padding: 10px;
+    	li {
+    		a {
+    			color: #555555;
+			    font-size: 18px;
+			    .transition(all 0.2s ease-out);
+    		}
+    	}
+	}
+}
+#cssmenu {
+	> li {
+		border-bottom: 1px dashed #c9c9c9;
+		a {
+			&:before {
+				position: absolute;
+			    left: 0;
+			    top: 15px;
+			    content: "\f054";
+			    font-family: "FontAwesome";
+			    color: #e76d66;
+			    width: 15px;
+			    font-size: 10px;
+			    margin-right: 10px;
+			    font-weight: normal;
+			    font-style: normal;
+			    color: #777;
+			    .transition(all 0.3s linear 0s);
+			    opacity: 0;
+			    visibility: hidden;
+			}
+		}
+		&.item {
+			> ul {
+				> li {
+					> a {
+						margin-left: 0;
+					    padding-left: 30px;
+					    border-top: 1px dashed #c9c9c9;	
+					    &:before {
+						    left: 15px;
+					    }
+					}
+					.lve2 {
+						li {
+							a {
+								padding-left: 40px;
+							}
+						}
+					}
+				}
+			}
+		}
+		&:hover {
+			> a {
+				&:before {
+					opacity: 1;
+				    visibility: visible;
+				    color: #97c505;
+				    margin-left: 5px;
+				    margin-right: 5px;
+				}
+			}
+		}
+		&:last-child {
+			border-bottom: 0;
+		}
+	}
+}
+span {
+	&.sign {
+		right: 0;
+	    position: absolute;
+	    padding-right: 10px;
+	}
+}
+.list-group {
+    padding-left: 0;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    .box-shadow(0 1px 2px rgba(0, 0, 0, .075));
+}
+.ui-slider-horizontal {
+    height: .8em;
+    .ui-slider-range {
+    	top: 0;
+	    height: 100%;
+    }
+}
+.ui-slider {
+    position: relative;
+    text-align: left;
+}
+.widget {
+	&.widget_product_price_slide {
+		background: #fff;
+	    padding: 10px;
+	    padding-top: 35px;
+	}
+}
+#slider-container {
+	width: 90%;
+    height: 6px;
+	margin: 0 auto;
+    background: #cbcbcb;
+    color: #222222;
+    border-radius: 0;
+}
+button[disabled],
+html {
+	cursor: default;
+	 input[disabled] {
+	 	cursor: default;
+	 }
+}
+.widget_product_price_slide {
+	input {
+		font-size: 16px;
+	    text-align: center;
+	    margin: 15px 0;
+	    display: inline-block;
+	    width: 100%;
+	    opacity: 0.9!important;
+	    background: transparent;
+	    border: 0;
+	}
+}
+.ui-slider  {
+	.ui-slider-range {
+		position: absolute;
+	    z-index: 1;
+	    font-size: .7em;
+	    display: block;
+	    border: 0;
+	    background-position: 0 0;
+	}
+}
+.ui-slider-range {
+	&.ui-widget-header {
+		&.ui-corner-all {
+		    top: 0;
+		    background: #333333;
+		    height: 100%;
+		}
+	}
+}
+
+ .ui-widget-content,
+ .ui-widget-header  {
+ 	.ui-state-default {
+		position: absolute;
+	    z-index: 2;
+	    border-radius: 0px;
+	    cursor: pointer;
+	    background: #ff6517;
+	    width: 12px;
+	    height: 15px;
+ 	}
+}
+.ui-state-default {
+	position: absolute;
+    z-index: 2;
+    border-radius: 0px;
+    cursor: pointer;
+    background: #ff6517;
+    width: 12px;
+    height: 15px;
+}
+.ui-slider-horizontal {
+	.ui-slider-handle {
+		top: -.3em;
+	    margin-left: -.6em;
+	}
+    
+}
+.sidebar_vendors {
+	.widget_content {
+		background: #fff;
+    	padding: 10px;
+    	ul {
+    		li {
+    			border-bottom: 1px dashed #c9c9c9;
+			    position: relative;
+			    &:last-child {
+			    	border: 0;
+			    }
+			    a {
+			    	color: #555555;
+				    font-size: 18px;
+				    .transition(all 0.2s ease-out);
+				    padding: 10px 15px;
+				    display: block;
+				    &:before {
+						position: absolute;
+					    left: 0;
+					    top: 15px;
+					    content: "\f054";
+					    font-family: "FontAwesome";
+					    color: #e76d66;
+					    width: 15px;
+					    font-size: 10px;
+					    margin-right: 10px;
+					    font-weight: normal;
+					    font-style: normal;
+					    color: #777;
+					    .transition(all 0.3s linear 0s);
+					    opacity: 0;
+					    visibility: hidden;
+				    }
+			    }
+			    &:hover {
+					a {
+						padding-left: 20px;
+					    color: #97c505;
+					    :before {
+					    	opacity: 1;
+						    visibility: visible;
+						    color: #97c505;
+						    margin-left: 5px;
+						    margin-right: 5px;
+					    }
+					}
+		    	}
+    		}
+    	}
+	}
+}

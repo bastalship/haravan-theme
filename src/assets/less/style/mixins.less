@@ -1,0 +1,47 @@
+//border radius creator
+.border-radius(@radius) {
+    border-radius: @radius;
+}
+//Different radius each side
+.border-radius(@top-left; @top-right; @bottom-left; @bottom-right) {
+    border-top-left-radius: @top-left;
+    border-top-right-radius: @top-right;
+    border-bottom-right-radius: @bottom-right;
+    border-bottom-left-radius: @bottom-left;
+}
+.transition(@transition) {
+    -webkit-transition: @transition;
+    -moz-transition: @transition;
+    -o-transition: @transition;
+    transition: @transition;
+}
+.transform(@transform) {
+    -webkit-transition: @transform;
+    -moz-transition: @transform;
+    -o-transition: @transform;
+    transition: @transform;
+}
+.transform-origin(@transform-origin) {
+    -webkit-transition: @transform-origin;
+    -moz-transition: @transform-origin;
+    -o-transition: @transform-origin;
+    transition: @transform-origin;
+}
+.appearance(@appearances) {
+    -webkit-appearance: @appearances;
+    -moz-appearance: @appearances;
+    transition: @appearances;
+}
+.flex-display(@display: flex) {
+    display: ~"-webkit-@{display}";
+    display: ~"-moz-@{display}";
+    display: ~"-ms-@{display}box"; // IE10 uses -ms-flexbox
+    display: ~"-ms-@{display}"; // IE11
+    display: @display;
+}
+.box-shadow(@box-shadow) {
+    -webkit-box-shadow: @box-shadow;
+    -moz-box-shadow: @box-shadow;
+    -o-box-shadow: @box-shadow;
+    box-shadow: @box-shadow;
+}

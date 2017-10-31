@@ -1,0 +1,97 @@
+.contact-map {
+    border: 5px solid @box-footer-bg;
+    padding: 6px;
+}
+.title-contact-form {
+	margin: 0 0 10px;
+    color: #444444;
+    font-size: 28px;
+    text-transform: capitalize;
+}
+.contact-form {
+	.input-lg,
+	.form-group-lg {
+		.form-control {
+		    height: 43px;
+		    padding: 8px 16px;
+		    font-size: 14px;
+		    line-height: 17px;
+		    border-radius: 4px;
+		}
+	}
+	.form-control {
+		color: #000;
+	    border-color: #D9D9D9;
+	}
+	.input-lg {
+		font-size: 13.3333px;
+	}
+	textarea {
+		&.form-control {
+			height: auto;
+		}
+	}
+	.btn-primary {
+		&.btn-lg {
+			padding: 11px 30px;
+		    border-radius: 4px;
+		    border: 0;
+		    text-transform: uppercase;
+		    background: #ff6517;
+		    box-shadow: none;
+		    font-size: 18px;
+		}
+	}
+}
+.description-contact {
+    margin: 30px 0;
+}
+.list-contact-wrapper {
+    padding: 10px 0;
+    border-top: 1px dashed #d7d7d7;
+    border-bottom: 1px dashed #d7d7d7;
+    margin-bottom: 30px;
+    .list-info-contact {
+    	list-style-type: none;
+    	li {
+    		> div {
+		 	    padding-left: 64px;
+			    position: relative;
+			    &:before {
+			    	font-family: fontawesome;
+				    display: inline-block;
+				    width: 42px;
+				    height: 42px;
+				    background-color: #60a703;
+				    border-radius: 50%;
+				    -webkit-border-radius: 50%;
+				    color: #fff;
+				    position: absolute;
+				    left: 0px;
+				    top: 0px;
+				    text-align: center;
+				    line-height: 42px;
+			    }
+			    &.address-contact {
+			    	&:before {
+			    		content: "\f041";
+					    font-size: 21px;
+			    	}
+			    }
+			    &.email-contact {
+			    	&:before {
+		    		    content: "\f0e0";
+					    font-size: 17px;
+			    	}
+			    }
+			    &.hotline-contact {
+			    	&:before {
+			    		content: "\f095";
+					    font-size: 21px;
+			    	}
+			    }
+    		}
+
+		}
+	} 
+}

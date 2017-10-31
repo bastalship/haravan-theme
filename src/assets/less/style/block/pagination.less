@@ -1,0 +1,65 @@
+div {
+	&#pagination {
+		width: 100%;
+	    float: left;
+	    margin-bottom: 20px;
+	    padding: 10px 20px;
+	    .prev,
+	    .next {
+	    	color: #888888;
+		    font-size: 16px;
+		    position: relative;
+		    line-height: 30px;
+		    &:hover {
+	    	    color: @primary-color;
+			    background: transparent;
+		    }
+			span {
+				padding: 0px 5px 0px 15px;
+			    white-space: nowrap;
+			}
+	    }
+	    a,
+	    span {
+	    	&.page-node {
+	    		font-weight: bold;
+			    border: 1px solid #efefef;
+			    border-top: 1px solid #60a703;
+			    display: inline-block;
+			    height: 30px;
+			    line-height: 28px;
+			    padding: 0px 10px;
+			    margin: 0 5px 0 0px;
+			    text-align: center;
+			    border-radius: 0;
+			    -webkit-border-radius: 0;
+			    -moz-border-radius: 0;
+			    -o-border-radius: 0;
+			    background-color: #fff;
+	    	}
+	    }
+	    a {
+	    	&.page-node {
+				&:hover {
+					background: #97c505;
+					color: #fff;
+				}
+	    	}
+	    }
+	    span {
+	    	&.page-node {
+				&.current {
+				    background: #60a703;
+				    color: @box-footer-bg;
+				    border-color: #60a703;
+				}
+	    	}
+	    }
+	}
+	.fa {
+		 &:before {
+    	    font-size: 20px;
+		    position: absolute;
+	    }
+	}
+}

@@ -1,0 +1,44 @@
+#article {
+	background: @box-footer-bg;
+	.header-page {
+		h1 {
+			margin: 0;
+		    color: #444;
+		    font-size: 32px;
+		    text-transform: capitalize;
+		}
+	}
+}
+.author-post {
+    border-bottom: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+}
+.article-author {
+    float: left;
+}
+.author-post {
+	ul {
+		li {
+			float: left;
+    		margin-right: 15px;
+    		&.author {
+    			span {
+    				color: #60a703;
+    			}
+    		}
+		}
+	}
+}
+.date-post {
+	.fa {
+		&:before {
+			position: static;
+			font-size: 14px;
+		}
+	}
+}
+.body-content {
+	p {
+		color: #555;
+	}
+}

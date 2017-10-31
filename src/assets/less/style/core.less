@@ -1,0 +1,100 @@
+/*
+ * Core: General Layout Style
+ * -------------------------
+ */
+* {
+    font-family: @font-family, @font-family-sans-serif-onface;
+}
+html,
+body {
+    min-height: 100%;
+    color: @text-color-1;
+    font-size: 15px;
+    .layout-boxed & {
+        height: 100%;
+    }
+}
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: @font-family;
+    overflow-x: hidden;
+    overflow-y: auto;
+    line-height: 1.4;
+    background: #fff;
+}
+/* ::selection style */
+p,
+span,
+label,
+strong,
+img {
+    &::-moz-selection { /* Code for Firefox */
+        color: #fff;
+        background: @primary-color;
+    }
+
+    &::selection {
+        color: #fff;
+        background: @primary-color;
+    }
+}
+/* H1 - H6 font */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    color: #60a703;
+    font-family: @font-family;
+    font-weight: 300;
+    line-height: 1.4;
+    margin: 10px 0 20px;
+    &::-moz-selection { /* Code for Firefox */
+        color: #fff;
+        background: @primary-color;
+    }
+
+    &::selection {
+        color: #fff;
+        background: @primary-color;
+    }
+}
+/* General Links */
+a {
+    color: @link-color;
+    &::-moz-selection { /* Code for Firefox */
+        color: #fff;
+        background: @secondary-color;
+    }
+
+    &::selection {
+        color: #fff;
+        background: @secondary-color;
+    }
+}
+a:hover,
+a:active,
+a:focus {
+    outline: none;
+    text-decoration: none;
+    color: @link-hover-color;
+    .transition(all 0.2s ease-in-out);
+}
+img {
+    max-width: 100%;
+}
+
+.cover-background {
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
