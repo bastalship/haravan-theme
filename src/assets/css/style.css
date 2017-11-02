@@ -2296,32 +2296,22 @@ ul.social li a .fa:before {
 .list-main-menu li a:hover {
   color: #f2600d;
 }
-.list-main-menu li.list-first-sub-menu > a:after {
-  content: "\f078";
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 9px;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  color: #333;
-  vertical-align: top;
-  margin: 5px 0px 0px 12px;
+.list-first-sub-menu:hover .list-second-meunu {
+  display: block;
 }
 .second-sub-menu {
-  position: relative;
   width: 220px;
+  position: absolute;
+  z-index: 9;
+  background-color: #fff;
+  display: none;
 }
 .second-sub-menu .second-content-sub-menu {
   position: absolute;
   z-index: 10;
   width: 100%;
   background-color: #fff;
+  display: none;
 }
 ul.sub-menu-2 li {
   float: inherit;
@@ -2330,6 +2320,46 @@ ul.sub-menu-2 li a {
   padding-top: 10px;
   padding-bottom: 10px;
   text-transform: inherit;
+}
+.list-second-meunu {
+  width: 220px;
+  height: auto;
+  position: absolute;
+  background-color: #fff;
+  z-index: 9;
+  display: none;
+}
+.list-second-meunu > li {
+  float: inherit;
+  position: relative;
+}
+.list-second-meunu > li > a {
+  text-transform: initial;
+  padding: 10px 25px;
+  display: block;
+  width: 100%;
+}
+.list-second-meunu > li .list-third-meunu {
+  position: absolute;
+  width: 220px;
+  height: auto;
+  background-color: #fff;
+  z-index: 9;
+  left: 220px;
+  top: 0;
+  display: none;
+}
+.list-second-meunu > li .list-third-meunu > li {
+  float: inherit;
+}
+.list-second-meunu > li .list-third-meunu > li > a {
+  text-transform: initial;
+  padding: 10px 25px;
+  display: block;
+  width: 100%;
+}
+.list-second-meunu > li:hover .list-third-meunu {
+  display: block;
 }
 .register-news {
   background: #97c505;
