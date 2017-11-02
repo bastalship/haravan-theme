@@ -2233,6 +2233,188 @@ img {
  * Component: Form
  * ---------------
  */
+.fa-icon {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ul.social {
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+ul.social li {
+  display: inline-block;
+  line-height: 30px;
+  height: 30px;
+  width: 30px;
+  margin: 0 2px;
+  text-align: center;
+  background: #f2f2f2;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s cubic-bezier(0.36, -0.055, 0, 1.22);
+  -moz-transition: all 0.3s cubic-bezier(0.36, -0.055, 0, 1.22);
+  -o-transition: all 0.3s cubic-bezier(0.36, -0.055, 0, 1.22);
+  transition: all 0.3s cubic-bezier(0.36, -0.055, 0, 1.22);
+}
+ul.social li a {
+  color: #444;
+}
+ul.social li a .fa:before {
+  position: static;
+  font-size: inherit;
+}
+.header-right-info {
+  margin-top: 40px;
+}
+.search-form {
+  width: 170px;
+  float: right;
+  padding: 13px 0;
+}
+.menu-nav {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+}
+.list-main-menu {
+  margin: auto;
+}
+.list-main-menu li {
+  float: left;
+}
+.list-main-menu li a {
+  padding: 19px 25px;
+  display: block;
+  text-transform: uppercase;
+  color: #333;
+}
+.list-main-menu li a:hover {
+  color: #f2600d;
+}
+.list-main-menu li.list-first-sub-menu > a:after {
+  content: "\f078";
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 9px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: #333;
+  vertical-align: top;
+  margin: 5px 0px 0px 12px;
+}
+.list-main-menu li > .second-sub-menu {
+  background: #fff;
+  width: 220px;
+  position: absolute;
+  z-index: 9;
+}
+.list-main-menu li > .second-sub-menu .second-content-sub-menu {
+  display: block;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  visibility: hidden;
+  padding: 30px;
+  margin-top: 25px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -o-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.list-main-menu li > .second-sub-menu .second-content-sub-menu .arrow {
+  position: absolute;
+  left: 83.5px;
+  height: 1px;
+}
+.list-main-menu li > .second-sub-menu .second-content-sub-menu .arrow:after {
+  position: absolute;
+  margin-top: -40px;
+  margin-left: -30px;
+  display: inline-block;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #fff;
+  border-left: 10px solid transparent;
+  content: '';
+  z-index: 30;
+}
+.list-main-menu li > .second-sub-menu .second-content-sub-menu ul.sub-menu-2 {
+  list-style: none;
+  margin: -14px 0px -15px 0px;
+  padding: 0px;
+  position: relative;
+}
+.list-main-menu li > .second-sub-menu .second-content-sub-menu ul.sub-menu-2 li {
+  position: relative;
+  margin: 0px -30px;
+  float: initial;
+}
+.list-main-menu li > .second-sub-menu .second-content-sub-menu .hover-menu a {
+  display: block;
+  position: relative;
+  margin: 0px;
+  padding: 10px 30px 8px 30px;
+  font-size: 14px;
+  background: #fff;
+  text-transform: inherit;
+  text-align: left;
+}
+.list-main-menu li > .second-sub-menu .second-content-sub-menu .hover-menu a.submenu {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.list-main-menu li > .second-sub-menu .second-content-sub-menu .hover-menu a.submenu:before,
+.list-main-menu li > .second-sub-menu .second-content-sub-menu .hover-menu a.submenuafter {
+  display: block;
+  position: absolute;
+  top: 16px;
+  cursor: pointer;
+  line-height: 9px;
+  font-weight: 400;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f054";
+  font-size: 9px;
+  color: #333;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.list-main-menu li > .second-sub-menu .second-content-sub-menu .hover-menu a.submenu:before {
+  right: 20px;
+}
+.list-main-menu li > .second-sub-menu .second-content-sub-menu .hover-menu a.submenu:after {
+  left: 15px;
+}
+.list-main-menu li > .second-sub-menu .second-content-sub-menu .hover-menu li:hover a.submenu {
+  padding-left: 50px;
+  color: #f2600d;
+}
 .register-news {
   background: #97c505;
   color: #fff;
