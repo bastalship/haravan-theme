@@ -2313,107 +2313,23 @@ ul.social li a .fa:before {
   vertical-align: top;
   margin: 5px 0px 0px 12px;
 }
-.list-main-menu li > .second-sub-menu {
-  background: #fff;
+.second-sub-menu {
+  position: relative;
   width: 220px;
+}
+.second-sub-menu .second-content-sub-menu {
   position: absolute;
-  z-index: 9;
+  z-index: 10;
+  width: 100%;
+  background-color: #fff;
 }
-.list-main-menu li > .second-sub-menu .second-content-sub-menu {
-  display: block;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  visibility: hidden;
-  padding: 30px;
-  margin-top: 25px;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background: #fff;
-  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
-  -o-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  -o-box-sizing: content-box;
-  box-sizing: content-box;
+ul.sub-menu-2 li {
+  float: inherit;
 }
-.list-main-menu li > .second-sub-menu .second-content-sub-menu .arrow {
-  position: absolute;
-  left: 83.5px;
-  height: 1px;
-}
-.list-main-menu li > .second-sub-menu .second-content-sub-menu .arrow:after {
-  position: absolute;
-  margin-top: -40px;
-  margin-left: -30px;
-  display: inline-block;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid #fff;
-  border-left: 10px solid transparent;
-  content: '';
-  z-index: 30;
-}
-.list-main-menu li > .second-sub-menu .second-content-sub-menu ul.sub-menu-2 {
-  list-style: none;
-  margin: -14px 0px -15px 0px;
-  padding: 0px;
-  position: relative;
-}
-.list-main-menu li > .second-sub-menu .second-content-sub-menu ul.sub-menu-2 li {
-  position: relative;
-  margin: 0px -30px;
-  float: initial;
-}
-.list-main-menu li > .second-sub-menu .second-content-sub-menu .hover-menu a {
-  display: block;
-  position: relative;
-  margin: 0px;
-  padding: 10px 30px 8px 30px;
-  font-size: 14px;
-  background: #fff;
+ul.sub-menu-2 li a {
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-transform: inherit;
-  text-align: left;
-}
-.list-main-menu li > .second-sub-menu .second-content-sub-menu .hover-menu a.submenu {
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-}
-.list-main-menu li > .second-sub-menu .second-content-sub-menu .hover-menu a.submenu:before,
-.list-main-menu li > .second-sub-menu .second-content-sub-menu .hover-menu a.submenuafter {
-  display: block;
-  position: absolute;
-  top: 16px;
-  cursor: pointer;
-  line-height: 9px;
-  font-weight: 400;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "\f054";
-  font-size: 9px;
-  color: #333;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-}
-.list-main-menu li > .second-sub-menu .second-content-sub-menu .hover-menu a.submenu:before {
-  right: 20px;
-}
-.list-main-menu li > .second-sub-menu .second-content-sub-menu .hover-menu a.submenu:after {
-  left: 15px;
-}
-.list-main-menu li > .second-sub-menu .second-content-sub-menu .hover-menu li:hover a.submenu {
-  padding-left: 50px;
-  color: #f2600d;
 }
 .register-news {
   background: #97c505;
