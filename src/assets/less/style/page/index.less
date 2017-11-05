@@ -6,3 +6,120 @@ body {
 	padding: 90px 0 120px;
     background: @bg-color-4;
 }
+.wap3 {
+    padding: 50px 0 20px;
+    background-color: @text-color-3;
+}
+.title-about h2 {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-style: italic;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+.title-about h3 {
+    font-size: 28px;
+    font-style: italic;
+    color: #ff6517;
+}
+.product-wrapper {
+	padding: 70px 0 90px;
+    background: #efefef;
+	.top-line {
+	    background: #272727;
+	    height: 3px;
+	    width: 90px;
+	    margin: auto;
+	}
+	.heading-title {
+	    padding: 30px 0;
+	}
+}
+.flexslider  {
+	 .flex-direction-nav {
+	 	.flex-prev {
+	 		&:before {
+	 			font-family: FontAwesome;
+			    font-size: 22px;
+			    content: '\f104';
+			    display: block;
+			    color: #c5c5c5;
+	 		}
+	 	}
+	 	.flex-next {
+			&:before {
+				font-family: FontAwesome;
+			    font-size: 22px;
+			    content: '\f105';
+			    display: block;
+			    color: #c5c5c5;
+			}
+		}
+	 	li {
+	 		a {
+	 			top: calc(~'50% - 16px');
+			    cursor: pointer;
+			    width: 40px;
+			    height: 40px;
+			    opacity: 0;
+			    border-radius: 100%;
+			    box-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+			    transition: all 0.2s ease-out;
+			    overflow: hidden;
+			    background: none;
+			    background-color: rgba(0, 0, 0, 0.5);
+			    text-align: center;
+			    text-indent: initial;
+			    line-height: 40px;
+			    .transition(all 0.3s ease-in-out 0s);
+			    .transform(scale(0));
+	 		}
+	 	}
+	 }
+   
+}
+.flex-control-nav {
+	display: none;
+}
+.wap1 {
+    position: relative;
+    z-index: 10;
+    margin-top: -215px;
+    padding-bottom: 58px;
+}
+.banner_home {
+    .transition(all 0.2s linear);
+}
+.img_banner_home {
+    width: 265px;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 265px;
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 4px solid #fff;
+    box-shadow: 1px 1px 6px #4e4e4e;
+}
+.title_banner_home {
+	h2 {
+		text-align: center;
+	    color: #444444;
+	    font-size: 20px;
+	    text-transform: uppercase;
+	    line-height: 1.4;
+	    display: table;
+	    margin: 20px auto 10px;
+	    span {
+		    font-weight: 600;
+		    display: block;
+		}
+	}
+}
+.detail_banner_home{
+    color: #888888;
+}
+.flex-viewport {
+	overflow: unset !important;
+}

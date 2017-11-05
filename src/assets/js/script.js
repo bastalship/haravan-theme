@@ -5,4 +5,12 @@ $(document).ready(function() {
     $( ".map-footer" ).mouseleave(function() {
         $(this).find('iframe').css("pointer-events", "none"); 
     });
+    function slider() {
+    	$(window).load(function() {
+		    $('.flexslider').flexslider({
+		        animation: "slide"
+		    });
+		});
+    }
+    slider();
 });
