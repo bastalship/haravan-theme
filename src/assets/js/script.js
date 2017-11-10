@@ -8,8 +8,11 @@ $(document).ready(function() {
     function slider() {
     	$(window).load(function() {
 		    $('.flexslider').flexslider({
-		        animation: "slide"
-		    });
+                animation: "slide",
+                start: function(slider){
+                  $('body').removeClass('loading');
+                }
+            });
 		});
     }
     slider();
