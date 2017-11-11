@@ -3926,5 +3926,59 @@ html[xmlns] .flexslider .slides {
   }
   .mobile-menu {
     display: block;
+    z-index: 1000;
+  }
+  .mobile-menu .meunu-name {
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #000;
+    color: #fff;
+  }
+  .mobile-menu .list-main-menu-mobile {
+    margin-top: 30px;
+  }
+  .mobile-menu .list-main-menu-mobile li {
+    background-color: #000;
+  }
+  .mobile-menu .list-main-menu-mobile li a {
+    color: #fff;
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    border-bottom: 1px solid #fff;
+  }
+  .mobile-menu .list-first-sub-menu-mobile {
+    position: relative;
+  }
+  .mobile-menu .list-first-sub-menu-mobile > i {
+    color: #fff;
+    position: absolute;
+    right: 20px;
+    top: 6px;
+  }
+  .mobile-menu .list-first-sub-menu-mobile > li > a {
+    padding-left: 20px;
+  }
+  .mobile-menu .list-second-meunu-mobile {
+    position: relative;
+  }
+  .mobile-menu .list-second-meunu-mobile > i {
+    color: #fff;
+    position: absolute;
+    right: 20px;
+    top: 6px;
+  }
+  .mobile-menu .list-second-meunu-mobile > li > a {
+    padding-left: 20px;
+  }
+  .mobile-menu .list-third-meunu-mobile > i {
+    color: #fff;
+    position: absolute;
+    right: 20px;
+    top: 6px;
+  }
+  .mobile-menu .list-third-meunu-mobile > li > a {
+    padding-left: 40px;
   }
 }

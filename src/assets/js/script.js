@@ -16,4 +16,14 @@ $(document).ready(function() {
 		});
     }
     slider();
+    function menuToggle(clickclass, toggleClass) {
+        $(toggleClass).hide();
+        $(clickclass).click(function() {
+            $(this).parent().find(toggleClass).slideToggle("slow");
+            
+        })
+    }
+    menuToggle('.meunu-name','.list-main-menu-mobile');
+    menuToggle('.link-first-menu-mobile','.list-second-meunu-mobile');
+    menuToggle('.link-second-menu-mobile','.list-third-meunu-mobile');
 });

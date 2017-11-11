@@ -27,9 +27,67 @@
   }
   .mobile-menu {
     display: block;
-
+    z-index: 1000; 
+    .meunu-name {
+      display: inline-block;    
+      padding: 10px;
+      margin-top: 10px;
+      background-color: #000;
+      color: #fff;              
+    }
     .list-main-menu-mobile {
-      
+      margin-top: 30px;
+      li {
+        background-color: #000;
+        a {
+          color: #fff;
+          display: block;
+          width: 100%;
+          padding: 5px 10px;
+          border-bottom: 1px solid #fff;
+        }
+      }
+    }
+    .list-first-sub-menu-mobile {
+      position: relative;
+      > i {
+        color: #fff;
+        position: absolute;
+        right: 20px;
+        top: 6px;
+      }
+      > li {
+        > a {
+          padding-left: 20px;
+        }
+      }
+    }
+    .list-second-meunu-mobile {
+      position: relative;
+       > i {
+        color: #fff;
+        position: absolute;
+        right: 20px;
+        top: 6px;
+      }
+      > li {
+        > a {
+          padding-left: 20px;
+        }
+      }
+    }
+    .list-third-meunu-mobile {
+       > i {
+        color: #fff;
+        position: absolute;
+        right: 20px;
+        top: 6px;
+      }
+      > li {
+        > a {
+          padding-left: 40px;
+        }
+      }
     }
   }
 }
