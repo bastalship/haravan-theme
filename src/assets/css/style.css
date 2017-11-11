@@ -3642,6 +3642,9 @@ body {
 .flex-viewport {
   overflow: unset !important;
 }
+.mobile-menu {
+  display: none;
+}
 /*
  * jQuery FlexSlider v2.6.4
  * http://www.woothemes.com/flexslider/
@@ -3915,5 +3918,13 @@ html[xmlns] .flexslider .slides {
   .flex-direction-nav .flex-next {
     opacity: 1;
     right: 10px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .menu-nav {
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
   }
 }
