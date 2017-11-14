@@ -2378,6 +2378,14 @@ ul.sub-menu-2 li a {
 .list-second-meunu > li:hover .list-third-meunu {
   display: block;
 }
+.link-first-menu {
+  position: relative;
+}
+.link-first-menu  + i {
+  position: absolute;
+  top: 9px;
+  right: 20px;
+}
 .register-news {
   background: #97c505;
   color: #fff;
@@ -2958,6 +2966,34 @@ ul.list-gallery li a:after {
 }
 .hover-mask .inner-mask .btn-cart i {
   margin-right: 5px;
+}
+.hover-mask .inner-mask .btn-cart i:before {
+  font-size: 14px;
+  position: static;
+}
+.hover-mask .inner-mask .add-to-links {
+  margin-top: 10px;
+}
+.hover-mask .inner-mask .add-to-links > li {
+  display: inline-block;
+}
+.hover-mask .inner-mask .add-to-links > li a {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  padding: 0;
+  transition: ease all 0.5s;
+  -webkit-transition: ease all 0.5s;
+  -moz-transition: ease all 0.5s;
+  -o-transition: ease all 0.5s;
+  color: #fff;
+}
+.hover-mask .inner-mask .add-to-links > li a i:before {
+  position: static;
+  font-size: 14px;
 }
 .toolbar-inner.clearfix {
   background: #fff;
@@ -3910,6 +3946,24 @@ html[xmlns] .flexslider .slides {
 /* ====================================================================================================================
  * RESPONSIVE
  * ====================================================================================================================*/
+@media screen and (max-width: 767px) {
+  .wap1 {
+    position: relative;
+    z-index: 10;
+    margin-top: -20px;
+    padding-bottom: 58px;
+  }
+  .mask-brg,
+  .hover-mask {
+    display: none;
+  }
+  .product-resize {
+    height: 620px !important;
+  }
+  .image-resize {
+    height: 480px !important;
+  }
+}
 @media screen and (max-width: 860px) {
   .flex-direction-nav .flex-prev {
     opacity: 1;

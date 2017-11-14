@@ -110,8 +110,38 @@
 		    border-radius: 3px;
 		    i {
 		    	margin-right: 5px;
+				&:before {
+					font-size: 14px;
+					position: static;
+				}
 		    }
 		}
+		.add-to-links {
+			margin-top: 10px;
+			>	li  {
+				display: inline-block;
+				a {
+					display: inline-block;
+				    height: 30px;
+				    width: 30px;
+				    line-height: 30px;
+				    border: 1px solid #fff;
+				    border-radius: 3px;
+				    padding: 0;
+				    transition: ease all 0.5s;
+				    -webkit-transition: ease all 0.5s;
+				    -moz-transition: ease all 0.5s;
+				    -o-transition: ease all 0.5s;
+				    color: #fff; 
+				   i {
+				   	&:before {
+				   		position: static;
+				   		font-size: 14px;
+				   	}
+				   }
+				}
+			}
+		} 
     }
 }
 .toolbar-inner {

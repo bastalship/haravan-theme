@@ -1,3 +1,4 @@
+
 ul {
 	&.social {
 	    margin-top: 40px;
@@ -127,4 +128,13 @@ ul {
     	}
     }
 }
-
+.link-first-menu {
+	position: relative;
+}
+.link-first-menu & {
+	& + i {
+		position: absolute;
+		top: 9px;
+		right: 20px;
+	}
+}
